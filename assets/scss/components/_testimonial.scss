@@ -18,7 +18,7 @@
         font-size: 18px;
         margin: 0;
         padding-top: 22px;
-        padding-bottom: 29px;
+        padding-bottom: 22px;
         line-height: 1.6;
       }
     }
@@ -52,6 +52,25 @@
         }
       }
     }
+  }
+  &__btn {
+    @include breakpoint (sm) {
+      display: none;
+    }
+    .custom-btn {
+      width: 100%;
+      img {
+        margin-left: 10px;
+        transform: translateY(5px);
+      }
+    }
+  }
+}
+
+.d-none {
+  display: none;
+  @include breakpoint (sm) {
+    display: inline-block;
   }
 }
 /* ---------- ========== Testimonial Section End Here ========== ---------- */
